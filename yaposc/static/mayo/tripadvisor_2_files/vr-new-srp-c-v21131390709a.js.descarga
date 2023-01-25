@@ -1,0 +1,3 @@
+require(['ta/rollupAmdShim'], function(rollupAmdShim) {rollupAmdShim.install(["vr/srp/new-srp"],[]);});
+if(window.requirejs && requirejs.taConfig)requirejs.taConfig({"deferred":{},"name":"build/concat/vr-new-srp","files":{"js-amd":{"src":{"vr":{"srp":{"new-srp":1}}}}},"_":{"baseUrl":"/"}});
+define("vr/srp/new-srp",[],function(){"use strict";function t(t){var n=t.remarketingOptions;return n&&localStorage.setItem("VacationRentalRemarketingOptions",JSON.stringify(n)),this}return{init:t}});

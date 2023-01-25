@@ -1,0 +1,38 @@
+
+<!-- saved from url=(0271)https://a4162.casalemedia.com/ifnotify?consent=1&c=1B6F71B&r=D40FD02B&t=60DC9C06&u=WUd1QXIyQlRmcTdMd3AuYVlYV3dCZ0FB&m=2f1141676624d9b3b0b8facd1897e8d5&wp=B3&aid=c58df1d8-39ec-b07a-d2f0-7b95fdccd6da&tid=15CA0&s=672E6&cp=1.79&n=www.tripadvisor.cl&pr=xx&epr=117e3297d6fdcf2b -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"></head><body marginwidth="0" marginheight="0"><img src="./113" style="display:none" width="0" height="0" alt="" border="0"><img src="./bridge" style="display:none" width="0" height="0" alt="" border="0"><script type="text/javascript">
+    (function() {
+      
+         
+    var reqPrime = new XMLHttpRequest();
+    reqPrime.open('GET', 'https://as-sec.casalemedia.com/vital?cb=1919952310', true);
+         
+    reqPrime.onreadystatechange = function() {
+        if (reqPrime.readyState === 4 && reqPrime.status === 200) {
+  
+            var startTime = Date.now();
+  
+            var reqTimed = new XMLHttpRequest();
+  
+            reqTimed.open('GET', 'https://as-sec.casalemedia.com/vital?cb=1919952310', true);
+  
+            reqTimed.onreadystatechange = function() {
+                if (reqTimed.readyState === 4 && reqTimed.status === 200) {
+  
+                    var endTime = Date.now();
+                    var deltaT = endTime - startTime;
+              
+                    var reqStats = new XMLHttpRequest();
+                    reqStats.open('GET', 'https://as-sec.casalemedia.com/vital?s=422630&type=aud&l=' + deltaT + '&cb=1919952310' + '&m=815b814c5d747105ced83972c0899e9a' + '&t=1625070601', true);
+                    reqStats.send();
+  
+                }
+            }
+            reqTimed.send();
+        }
+    };
+         
+    reqPrime.send();
+    })();
+    </script>
+    </body></html>
